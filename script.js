@@ -1,3 +1,5 @@
-function countChars(obj) {
-  document.getElementById("letterCount").innerHTML = obj.value.length;
-}
+const Text = document.getElementById("evaluatedText");
+const letter = document.getElementById("letterCount");
+Text.addEventListener("input", () => {
+  letter.textContent = Text.value.length;
+});
